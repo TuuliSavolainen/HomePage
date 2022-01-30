@@ -1,0 +1,47 @@
+@import 'config';
+
+body {
+    background-color: $primary-color;  
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;;
+    margin: 0;
+    height: 100%;
+    line-height: 1.5;
+    color: $text-color;
+
+    &.main-heading {
+        color: $text-color;
+        font-size: 4rem;
+        letter-spacing: 0.7rem;
+        padding: 20px;
+    }
+
+    &.secondary-heading {
+        font-size: 15px;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.icons {
+    padding: 20px;
+    
+    
+    a { 
+        padding: 20px;
+        color: $link-color;
+        text-decoration: none;
+        &:hover {
+            color: #ca89ff;
+            transition: all 0.3s ease-out;
+
+        }
+    }
+
+    
+}
+
+#home {
+    margin: 30px 50px 30px 50px;
+}
