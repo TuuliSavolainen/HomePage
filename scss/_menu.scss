@@ -1,17 +1,79 @@
 .menu-btn {
     position: absolute;
-  right: 35px;
-  top: 35px;
-  cursor: pointer;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    z-index: 4;
 
 
-  .menu-bar {
+    .menu-bar {
 
-    background-color: white;
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-  }
+        background-color: white;
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        @include easeOut
+    }
+
+    &.close {
+        transform: rotate(180deg);
+        .menu-bar{
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+
+            }
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin: 0 0 0 auto;
+    width: 30%;
+    height: 100%;
+    z-index: 3;
+
+
+    color: white;
+    background-color: rgba(59, 59, 59, 0.863);
+
+    visibility: hidden;
+
+
+
+    
+
+    &.show{
+        visibility: visible;
+        @include easeOut;
+        transform: translate3d(0, -100%, 0);
+        
+    }
+
+    .menu-link {
+        display: inline-block;
+        position: relative;
+        font-size: 27px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 200;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
 }
 
 .menu-items {
