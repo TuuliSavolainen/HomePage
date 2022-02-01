@@ -1,0 +1,24 @@
+.menu-btn {
+    position: absolute;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+
+
+  .menu-bar {
+
+    background-color: white;
+    width: 28px;
+    height: 30px;
+    margin: 0 0 5px 0;
+  }
+}
+
+.menu {
+    color:white;
+
+}
+
+.menu-items {
+  display: hidden;
+}
