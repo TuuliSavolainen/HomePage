@@ -43,20 +43,7 @@ h1, h2, h3, h4, p, a {
     
 }
 
-.menu-btn {
-    color: white;
-    right: 35px;
-    top: 35px;
-    cursor: pointer;
-  
-    .menu-bar {
-      color: white;
-      width: 28px;
-      height: 3px;
-      margin: 0 0 5px 0;
-    }
-  }
-  
+
   
 .menu-item {
     display: none;
@@ -83,11 +70,11 @@ h1, h2, h3, h4, p, a {
         grid-gap: 5px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        'linkedin github'
-        'contact contact'
-        'bio bio'
-        ;
+        'linkedin github';
+ 
         color: $text-color;
+        padding-top: 10px;
+        padding-bottom: 5px;
 
 
         .footer-github{
@@ -102,38 +89,7 @@ h1, h2, h3, h4, p, a {
             text-align: right;
         }
     
-        .footer-bio{
-            grid-area: bio;
-            font-size: 12px;
-           
-        }
-        .footer-contact{
-    
-            grid: contact;
-            grid-column: 1/2;
-            justify-self: stretch;
-            align-items: center;
-            justify-items: center;
-    
-            text-align: center;
-            text-decoration: none;
-            letter-spacing: 1px;
-            color: $link-color;
-            border: solid $link-color 1px;
-            width: 110px;
-            
-            height: 20px;
-            line-height: 20px;
-    
-    
-            ;
-    
-            &:hover{
-                border: solid $hover-color 1px;
-                transition: all 0.5s ease-out;
-            }
-            
-        }
+        
     }
 
 
@@ -147,6 +103,34 @@ h1, h2, h3, h4, p, a {
             transition: all 0.3s ease-out;
 
         }
+    }
+    .footer-bio{
+        grid-area: bio;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        text-align: center;
+       
+    }
+
+    .footer-contact{
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: $link-color;
+        border: solid $link-color 1px;
+        width: 110px;
+        height: 20px;
+        line-height: 20px;
+
+        margin: auto;
+        display: block;
+
+        &:hover{
+            border: solid $hover-color 1px;
+            transition: all 0.5s ease-out;
+        }
+        
     }
 
 }
