@@ -5,6 +5,10 @@ body {
     background-color: $primary-color;  
 }
 
+main {
+    min-height: calc(100vh - 60px);
+}
+
 
 h1, h2, h3, h4, p, a {
     font-family: 'Raleway', sans-serif;;
@@ -55,6 +59,7 @@ h1, h2, h3, h4, p, a {
 }
 
 #main-footer {
+    height: 60px;
 
     // sector divider
     .line{
