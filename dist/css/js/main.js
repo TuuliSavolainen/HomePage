@@ -19,10 +19,10 @@ function toggleMenu() {
     }
     else {
         console.log('kukkuluuru')
-        menuBtn.classList.add('close');
-        menu.classList.add('show');
-        menuItems.classList.add('show');
-        menuItem.forEach(element => element.classList.add('show'));
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuItems.classList.remove('show');
+        menuItem.forEach(element => element.classList.remove('show'));
    
         showMenu = false
     }

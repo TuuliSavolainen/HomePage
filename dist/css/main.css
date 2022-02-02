@@ -3,7 +3,8 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  z-index: 4; }
+  z-index: 4;
+  transition: all 0.5s ease-out; }
   .menu-btn .menu-bar {
     background-color: white;
     width: 28px;
@@ -20,7 +21,7 @@
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
@@ -29,20 +30,25 @@
   width: 30%;
   height: 100%;
   z-index: 3;
+  padding-top: 60px;
+  padding-left: 0px;
+  margin-left: 0px;
   color: white;
   background-color: rgba(59, 59, 59, 0.863);
-  visibility: hidden; }
+  visibility: hidden;
+  transform: translate3d(100%, 0, 0);
+  transition: all 0.5s ease-out; }
   .menu.show {
     visibility: visible;
-    transition: all 0.5s ease-out;
-    transform: translate3d(0, -100%, 0); }
+    transform: translate3d(0, 0, 0); }
   .menu .menu-link {
     display: inline-block;
     position: relative;
-    font-size: 27px;
+    font-size: 22px;
     text-transform: uppercase;
+    list-style: none;
     padding: 1rem 0;
-    font-weight: 200;
+    font-weight: 400;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .menu-link:hover {
@@ -57,18 +63,19 @@ body {
 main {
   min-height: calc(100vh - 60px); }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, ul {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   height: 100%;
   line-height: 1.5;
-  color: #f8f8f8; }
-  h1.main-heading, h2.main-heading, h3.main-heading, h4.main-heading, p.main-heading, a.main-heading {
+  color: #f8f8f8;
+  list-style-type: none; }
+  h1.main-heading, h2.main-heading, h3.main-heading, h4.main-heading, p.main-heading, a.main-heading, ul.main-heading {
     color: #f8f8f8;
     font-size: 4rem;
     letter-spacing: 0.7rem;
     padding: 20px; }
-  h1.secondary-heading, h2.secondary-heading, h3.secondary-heading, h4.secondary-heading, p.secondary-heading, a.secondary-heading {
+  h1.secondary-heading, h2.secondary-heading, h3.secondary-heading, h4.secondary-heading, p.secondary-heading, a.secondary-heading, ul.secondary-heading {
     font-size: 15px;
     letter-spacing: 0.1rem; }
 
@@ -81,9 +88,6 @@ h1, h2, h3, h4, p, a {
     .icons a:hover {
       color: #b574ff;
       transition: all 0.3s ease-out; }
-
-.menu-item {
-  display: none; }
 
 #home {
   margin: 30px 50px 30px 50px; }

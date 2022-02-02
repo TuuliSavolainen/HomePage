@@ -10,12 +10,13 @@ main {
 }
 
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, ul {
     font-family: 'Raleway', sans-serif;;
     margin: 0;
     height: 100%;
     line-height: 1.5;
     color: $text-color;
+    list-style-type: none;
 
     &.main-heading {
         color: $text-color;
@@ -46,13 +47,6 @@ h1, h2, h3, h4, p, a {
 
     
 }
-
-
-  
-.menu-item {
-    display: none;
-  }
-  
 
 #home {
     margin: 30px 50px 30px 50px;
