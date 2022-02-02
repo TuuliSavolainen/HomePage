@@ -141,3 +141,14 @@ h1, h2, h3, h4, p, a, ul {
     #main-footer .footer-contact:hover {
       border: solid #b574ff 1px;
       transition: all 0.5s ease-out; }
+
+@media screen and (max-width: 500px) {
+  .menu-btn {
+    position: absolute;
+    right: 40px;
+    top: 40px; }
+  .menu {
+    position: fixed;
+    width: 100%;
+    transform: translate3d(0, -100%, 0);
+    height: fit-content; } }

@@ -1,0 +1,29 @@
+
+@include mediaXl {
+
+    
+}
+
+@include mediaLg {
+
+}
+
+@include mediaMd {
+}
+
+@include mediaSm {
+
+    .menu-btn{
+        position: absolute;
+        right: 40px;
+        top: 40px;
+   }
+
+   .menu{
+       position: fixed;
+       width: 100%;
+       transform: translate3d(0, -100%, 0);
+       height: fit-content;
+   }
+
+}

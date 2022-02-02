@@ -9,7 +9,6 @@ menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
     if (!showMenu) {
-        console.log('moi')
         menuBtn.classList.add('close');
         menu.classList.add('show');
         menuItems.classList.add('show');
@@ -18,7 +17,6 @@ function toggleMenu() {
         showMenu = true
     }
     else {
-        console.log('kukkuluuru')
         menuBtn.classList.remove('close');
         menu.classList.remove('show');
         menuItems.classList.remove('show');
@@ -28,4 +26,17 @@ function toggleMenu() {
     }
 }
 
-console.log(showMenu);
+const home = document.querySelector('#home')
+
+home.addEventListener('click', closeMenu)
+
+function closeMenu() {
+    if (showMenu) {
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuItems.classList.remove('show');
+        menuItem.forEach(element => element.classList.remove('show'));
+   
+        showMenu = false
+    }
+}
