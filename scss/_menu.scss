@@ -39,7 +39,8 @@
     right: 0;
     display: flex;
     margin: 0 0 0 auto;
-    width: 30%;
+    width: 200px;
+
     height: 100%;
     z-index: 3;
     padding-top: 60px;
@@ -48,7 +49,7 @@
 
 
     color: white;
-    background-color: rgba(59, 59, 59, 0.863);
+    background-color: rgba(24, 24, 24, 0.918);
 
     visibility: hidden;
 
@@ -66,7 +67,7 @@
     .menu-link {
         display: inline-block;
         position: relative;
-        font-size: 22px;
+        font-size: 20px;
         text-transform: uppercase;
         list-style: none;
         padding: 1rem 0;
@@ -76,6 +77,16 @@
 
         &:hover {
             color: $hover-color;
+        }
+    }
+
+    .current {
+        text-decoration: underline;
+        text-underline-position: under;
+        color: $link-color;
+        font-size: 25px;
+        &:hover{
+            color: $link-color;
         }
     }
 }

@@ -27,14 +27,14 @@
   right: 0;
   display: flex;
   margin: 0 0 0 auto;
-  width: 30%;
+  width: 200px;
   height: 100%;
   z-index: 3;
   padding-top: 60px;
   padding-left: 0px;
   margin-left: 0px;
   color: white;
-  background-color: rgba(59, 59, 59, 0.863);
+  background-color: rgba(24, 24, 24, 0.918);
   visibility: hidden;
   transform: translate3d(100%, 0, 0);
   transition: all 0.5s ease-out; }
@@ -44,7 +44,7 @@
   .menu .menu-link {
     display: inline-block;
     position: relative;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     list-style: none;
     padding: 1rem 0;
@@ -53,6 +53,13 @@
     transition: all 0.5s ease-out; }
     .menu .menu-link:hover {
       color: #b574ff; }
+  .menu .current {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #68c7e4;
+    font-size: 25px; }
+    .menu .current:hover {
+      color: #68c7e4; }
 
 .menu-items {
   display: hidden; }
@@ -74,7 +81,8 @@ h1, h2, h3, h4, p, a, ul {
     color: #f8f8f8;
     font-size: 4rem;
     letter-spacing: 0.7rem;
-    padding: 20px; }
+    padding-top: 35px;
+    padding-bottom: 10px; }
   h1.secondary-heading, h2.secondary-heading, h3.secondary-heading, h4.secondary-heading, p.secondary-heading, a.secondary-heading, ul.secondary-heading {
     font-size: 15px;
     letter-spacing: 0.1rem; }
@@ -142,7 +150,12 @@ h1, h2, h3, h4, p, a, ul {
       border: solid #b574ff 1px;
       transition: all 0.5s ease-out; }
 
+#about {
+  margin: 30px 50px 30px 50px; }
+
 @media screen and (max-width: 500px) {
+  #home .main-heading {
+    font-size: 35px; }
   .menu-btn {
     position: absolute;
     right: 40px;

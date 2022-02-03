@@ -13,6 +13,14 @@
 
 @include mediaSm {
 
+    #home{
+
+        .main-heading{
+            font-size: 35px;
+        }
+
+    }
+
     .menu-btn{
         position: absolute;
         right: 40px;
