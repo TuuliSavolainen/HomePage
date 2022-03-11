@@ -26,9 +26,9 @@ function toggleMenu() {
     }
 }
 
-const home = document.querySelector('#home')
+const divElement = document.querySelector('.div-element')
 
-home.addEventListener('click', closeMenu)
+divElement.addEventListener('click', closeMenu)
 
 function closeMenu() {
     if (showMenu) {

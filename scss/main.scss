@@ -7,9 +7,11 @@ body {
     
 }
 
+/*
 main {
     min-height: calc(100vh - 60px);
 }
+*/
 
 
 h1, h2, h3, h4, p, a, ul {
@@ -34,21 +36,49 @@ h1, h2, h3, h4, p, a, ul {
     }
 }
 
+.column1 {
+    width: 70%;
+    padding: 10px 0 0 0;
+    float: left;
+
+}
+
+.column2{
+    width: 25%;
+    float: right;
+    padding-top: 150px;
+    padding-left: 20px;
+}
+
+.mainimage{
+    display: block;
+    width: 100%;
+    height: auto;
+
+
+    background: url('../img/tuulisavolainen_image.png');
+    border-radius: 3%;
+    background-size: cover;
+
+    box-shadow: 100px 100px 80px 8px black inset;
+    }
+
+
+
 .icons {
-    padding: 20px;
+    padding: 10px;
     
     a { 
-        padding: 20px;
+        padding: 10px;
         color: $link-color;
         text-decoration: none;
+        font-size: 12px;
+
         &:hover {
             color: $hover-color;
             transition: all 0.3s ease-out;
-
         }
-    }
-
-    
+    }   
 }
 
 #home {
@@ -56,8 +86,40 @@ h1, h2, h3, h4, p, a, ul {
 }
 
 #main-footer {
-    height: 60px;
 
+
+    // graidient backgroun for better readability
+    background-image: radial-gradient(rgb(24, 24, 24), rgba(24, 24, 24, 0.116));
+    border-radius: 30%;
+
+    // sticking at the bottom of the page
+    position: fixed;
+    padding: 30px;
+    left: 30px;
+    bottom: 30px;
+
+    // contact me button
+    .footer-contact{
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: $link-color;
+        border: solid $link-color 1px;
+        width: 110px;
+        height: 20px;
+        line-height: 20px;
+
+        margin: auto;
+        display: block;
+        background-color: black;
+
+        &:hover{
+            border: solid $hover-color 1px;
+            transition: all 0.5s ease-out;
+        }
+        
+    }
+/*
     // sector divider
     .line{
         width: 100%;
@@ -73,11 +135,9 @@ h1, h2, h3, h4, p, a, ul {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         'linkedin github';
- 
         color: $text-color;
         padding-top: 10px;
         padding-bottom: 5px;
-
 
         .footer-github{
             grid-area: github;
@@ -90,11 +150,7 @@ h1, h2, h3, h4, p, a, ul {
             font-size: 8px;
             text-align: right;
         }
-    
-        
     }
-
-
 
     a { 
         padding: 5px;
@@ -103,7 +159,6 @@ h1, h2, h3, h4, p, a, ul {
         &:hover {
             color: #ca89ff;
             transition: all 0.3s ease-out;
-
         }
     }
     .footer-bio{
@@ -111,8 +166,7 @@ h1, h2, h3, h4, p, a, ul {
         font-size: 12px;
         padding-top: 5px;
         padding-bottom: 10px;
-        text-align: center;
-       
+        text-align: center;  
     }
 
     .footer-contact{
@@ -124,7 +178,6 @@ h1, h2, h3, h4, p, a, ul {
         width: 110px;
         height: 20px;
         line-height: 20px;
-
         margin: auto;
         display: block;
 
@@ -132,8 +185,8 @@ h1, h2, h3, h4, p, a, ul {
             border: solid $hover-color 1px;
             transition: all 0.5s ease-out;
         }
-        
     }
+*/
 
 }
 @import 'about';

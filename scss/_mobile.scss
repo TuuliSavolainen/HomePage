@@ -5,10 +5,28 @@
 }
 
 @include mediaLg {
+    
+    .column2{
+        padding-top: 250px;
+    }
 
 }
 
 @include mediaMd {
+
+    .column1{
+        float: none;
+        width: 100%;
+    }
+
+    .column2{
+        float: none;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        
+        padding: 20px 0 0 0;
+    }
 }
 
 @include mediaSm {
@@ -32,6 +50,26 @@
        width: 100%;
        transform: translate3d(0, -100%, 0);
        height: fit-content;
+   }
+
+   .div-element{
+       display: block;
+   }
+
+   .intro{
+       width: 100%;
+       display: inline-block;
+
+
+   }
+   .mainimage{
+       display: inline-block;
+       width: 200px;
+       height: 300px;
+       height: auto;
+
+
+
    }
 
 }
