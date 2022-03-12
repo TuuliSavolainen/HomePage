@@ -2,3 +2,90 @@
 #about {
     margin: 30px 50px 30px 50px;
 }
+
+.intro{
+
+    .h1{
+        
+    }
+    
+}
+
+.section{
+    padding: 20px;
+
+    .exp{
+        padding: 10px;
+        padding-left: 20px;
+        width: 100%;
+
+
+        .exp-title{
+            display: inline-block;
+            width: 38%;
+        }
+
+        .dates{
+            display: inline-block;
+            
+    
+            
+        }
+
+        .location{
+
+        }
+
+        .description{
+            padding-left: 40px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+
+    .edu{
+        display: grid;
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        
+
+        grid-template-areas:
+        "title title dates"
+        "location location ."
+        "details details description"
+        ;
+        grid-template-columns: 1fr 1fr 4fr;
+        grid-gap: 0px 40px;
+
+
+        .edu-title{
+            grid-area: title;
+
+        }
+
+        .dates{
+            grid-area: dates;
+
+        }
+
+        .location{
+            grid-area: location;
+        }
+
+        .details{
+            grid-area: details;
+            word-wrap: break-word;
+            word-break: break-all;
+            padding-left: 20px;
+
+        }
+
+        .description{
+            grid-area: description;
+        }
+    }
+
+
+}
+

@@ -72,20 +72,20 @@ main {
     min-height: calc(100vh - 60px);
 }
 */
-h1, h2, h3, h4, p, a, ul {
+h1, h2, h3, h4, p, a, ul, span {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   height: 100%;
   line-height: 1.5;
   color: #f8f8f8;
   list-style-type: none; }
-  h1.main-heading, h2.main-heading, h3.main-heading, h4.main-heading, p.main-heading, a.main-heading, ul.main-heading {
+  h1.main-heading, h2.main-heading, h3.main-heading, h4.main-heading, p.main-heading, a.main-heading, ul.main-heading, span.main-heading {
     color: #f8f8f8;
     font-size: 4rem;
     letter-spacing: 0.7rem;
     padding-top: 35px;
     padding-bottom: 10px; }
-  h1.secondary-heading, h2.secondary-heading, h3.secondary-heading, h4.secondary-heading, p.secondary-heading, a.secondary-heading, ul.secondary-heading {
+  h1.secondary-heading, h2.secondary-heading, h3.secondary-heading, h4.secondary-heading, p.secondary-heading, a.secondary-heading, ul.secondary-heading, span.secondary-heading {
     font-size: 15px;
     letter-spacing: 0.1rem; }
 
@@ -216,6 +216,43 @@ h1, h2, h3, h4, p, a, ul {
 
 #about {
   margin: 30px 50px 30px 50px; }
+
+.section {
+  padding: 20px; }
+  .section .exp {
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%; }
+    .section .exp .exp-title {
+      display: inline-block;
+      width: 38%; }
+    .section .exp .dates {
+      display: inline-block; }
+    .section .exp .description {
+      padding-left: 40px;
+      word-wrap: break-word;
+      word-break: break-all; }
+  .section .edu {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    grid-template-areas: "title title dates" "location location ." "details details description";
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-gap: 0px 40px; }
+    .section .edu .edu-title {
+      grid-area: title; }
+    .section .edu .dates {
+      grid-area: dates; }
+    .section .edu .location {
+      grid-area: location; }
+    .section .edu .details {
+      grid-area: details;
+      word-wrap: break-word;
+      word-break: break-all;
+      padding-left: 20px; }
+    .section .edu .description {
+      grid-area: description; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .column2 {
