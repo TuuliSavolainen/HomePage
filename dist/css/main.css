@@ -290,4 +290,17 @@ h1, h2, h3, h4, p, a, ul, span {
     display: inline-block;
     width: 200px;
     height: 300px;
-    height: auto; } }
+    height: auto; }
+  .section {
+    padding: 0px; }
+    .section .exp {
+      padding: 5px; }
+      .section .exp .exp-title {
+        display: block;
+        width: 100%; }
+      .section .exp .dates {
+        display: block; }
+    .section .edu {
+      display: block; }
+      .section .edu .description {
+        padding-top: 5px; } }

@@ -72,4 +72,34 @@
 
    }
 
+   // About Me page 
+
+   .section{
+       padding: 0px;
+
+       .exp{
+           padding: 5px;
+
+           .exp-title{
+               display: block;
+               width: 100%;
+
+           }
+
+           .dates{
+               display: block;
+           }
+        
+       }
+
+       .edu{
+           display: block;
+
+           .description{
+               padding-top: 5px;
+           }
+       }
+   }
+
+
 }
